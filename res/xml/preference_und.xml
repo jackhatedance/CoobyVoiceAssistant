@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="@string/preference_title_und">
+		<ListPreference
+			android:key="@string/preference_key_und_rate"
+			android:title="@string/preference_title_und_rate"
+			android:entries="@array/preference_entries_und_rate"
+			android:entryValues="@array/preference_values_und_rate"
+			android:defaultValue="@string/preference_default_isr_rate"
+			android:dialogTitle="@string/preference_dialog_title_isr_rate" />
+	</PreferenceCategory>
+</PreferenceScreen>
