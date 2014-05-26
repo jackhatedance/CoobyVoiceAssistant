@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical"
+	  android:gravity="center">	
+	<TextView 
+		style="@style/IntroductionTextView"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="1"
+		android:layout_marginTop="@dimen/common_view_margin"
+		android:layout_marginBottom="@dimen/common_view_margin"
+		android:scrollbars="vertical"
+		android:scrollbarAlwaysDrawVerticalTrack="false"
+		android:id="@+id/info_upload_contacts"
+		android:text="@string/text_personal_funcs"/>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_marginTop="@dimen/common_view_margin"
+		android:layout_marginBottom="@dimen/common_view_margin"
+		android:gravity="center_horizontal">
+		<Button android:id="@+id/upload_contacts"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/text_uploadcontacts"/>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:id="@+id/linear_userwords"
+		android:layout_height="wrap_content" 
+		android:orientation="horizontal"
+		android:layout_marginTop="@dimen/common_view_margin"
+		android:layout_marginBottom="@dimen/common_view_margin"
+		android:gravity="center_horizontal"
+		android:visibility="gone"
+		>
+		<Button android:id="@+id/upload_userwords"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" 
+			android:text="@string/text_uploaduserwords" />
+		<Button android:id="@+id/download_userwords"
+			android:layout_width="0dip"
+			android:layout_height="wrap_content"			
+			android:layout_marginLeft="@dimen/common_view_margin" 
+			android:text="@string/text_downloaduserwords" 
+			android:layout_weight="1"  />	
+	</LinearLayout>
+</LinearLayout>
